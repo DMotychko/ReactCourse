@@ -1,0 +1,9 @@
+.user-page {
+    display: flex;
+}
+.user-page button {
+    height: 20px;
+}
+.user-page p {
+    margin: 0;
+}
