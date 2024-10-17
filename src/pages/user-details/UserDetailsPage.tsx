@@ -29,7 +29,7 @@ const UserDetailsPage = () => {
             </div>
             <div>
                 <h2>User Posts</h2>
-                {userPosts.map((userPost: IPost) => <PostComponent post={userPost}/>)}
+                {userPosts.map((userPost: IPost) => <PostComponent post={userPost} key={userPost.id}/>)}
             </div>
         </div>
     );

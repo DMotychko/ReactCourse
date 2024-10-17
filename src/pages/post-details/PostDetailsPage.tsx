@@ -28,7 +28,7 @@ const PostDetailsPage = () => {
             </div>
             <div>
                 <h2>Post comments</h2>
-                {postComments.map((postComment: IComment) => <CommentComponent comment={postComment} />)}
+                {postComments.map((postComment: IComment) => <CommentComponent comment={postComment} key={postComment.id}/>)}
             </div>
         </div>
     );
