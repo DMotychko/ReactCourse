@@ -1,11 +1,12 @@
-import axios from "axios";
 import {IComment} from "../models/IComment";
-
-const axiosInstance = axios.create({
-    baseURL: 'https://jsonplaceholder.typicode.com/'
-})
+import {axiosInstance} from "./axios.service";
 
 export const getComments = async (): Promise<IComment[]> => {
     const response =  await axiosInstance.get('comments')
+    return response.data
+}
+
+export const getCommentsByPostsId = async (id: string): Promise<IComment[]> => {
+    const response = await axiosInstance.get('comments?postId=' + id)
     return response.data
 }
