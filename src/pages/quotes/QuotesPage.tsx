@@ -1,11 +1,11 @@
 import React from 'react';
 
-const App = () => {
+const QuotesPage = () => {
     return (
         <div>
-
+            quotes
         </div>
     );
 };
 
-export default App;
+export default QuotesPage;
