@@ -1,0 +1,11 @@
+.nav-list {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+.nav-list li {
+    list-style-type: none;
+}
+.nav-list li a {
+    text-decoration: none;
+}
